@@ -18,6 +18,7 @@ class FeedCollectionViewController: UICollectionViewController, UICollectionView
         super.viewWillAppear(animated)
         
         navigationItem.title = "FEED"
+        tabBarController?.tabBar.items?[0].badgeValue = String(format: "%i", (feeds?.count)!)
     }
     
     override func viewDidLoad() {
@@ -41,7 +42,7 @@ class FeedCollectionViewController: UICollectionViewController, UICollectionView
 extension FeedCollectionViewController
 {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let feedDetailTVC = FeedDetailTableViewController()
+        let feedDetailTVC = FeedDetailTableViewController(style: .grouped) // to prevent header view from being sticky
         feedDetailTVC.selectedFeed = feeds?[indexPath.item]
         feedDetailTVC.feeds = feeds
         navigationController?.pushViewController(feedDetailTVC, animated: true)
