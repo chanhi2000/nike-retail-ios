@@ -20,6 +20,7 @@ class TabBarController: UITabBarController {
         let secondNavigationController = UINavigationController(rootViewController: UIViewController())
         secondNavigationController.tabBarItem.image = UIImage(named: "icon-nike")
         secondNavigationController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+        secondNavigationController.tabBarItem.badgeValue = "2"
         
         let thirdNavigationController = UINavigationController(rootViewController: UIViewController())
         thirdNavigationController.tabBarItem.image = UIImage(named: "icon-plus")
