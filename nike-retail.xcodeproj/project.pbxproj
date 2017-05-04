@@ -24,6 +24,7 @@
 		B574026C1EBA8FB40021DAE6 /* BillingInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B574026B1EBA8FB40021DAE6 /* BillingInfoCell.swift */; };
 		B574026E1EBA920C0021DAE6 /* BaseStackViewTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B574026D1EBA920C0021DAE6 /* BaseStackViewTVCell.swift */; };
 		B57402701EBADBE80021DAE6 /* NikeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B574026F1EBADBE80021DAE6 /* NikeFont.swift */; };
+		B57402721EBB35290021DAE6 /* ImagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57402711EBB35280021DAE6 /* ImagesPageViewController.swift */; };
 		B582AE1E1EB992A900B3A3C6 /* CartDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B582AE1D1EB992A900B3A3C6 /* CartDetail.swift */; };
 		B582AE201EB99A2100B3A3C6 /* ButtonTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B582AE1F1EB99A2100B3A3C6 /* ButtonTVCell.swift */; };
 		B582AE221EB99EB700B3A3C6 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B582AE211EB99EB700B3A3C6 /* CheckoutTableViewController.swift */; };
@@ -57,6 +58,7 @@
 		B574026B1EBA8FB40021DAE6 /* BillingInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingInfoCell.swift; sourceTree = "<group>"; };
 		B574026D1EBA920C0021DAE6 /* BaseStackViewTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStackViewTVCell.swift; sourceTree = "<group>"; };
 		B574026F1EBADBE80021DAE6 /* NikeFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NikeFont.swift; sourceTree = "<group>"; };
+		B57402711EBB35280021DAE6 /* ImagesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesPageViewController.swift; sourceTree = "<group>"; };
 		B582AE1D1EB992A900B3A3C6 /* CartDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartDetail.swift; sourceTree = "<group>"; };
 		B582AE1F1EB99A2100B3A3C6 /* ButtonTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTVCell.swift; sourceTree = "<group>"; };
 		B582AE211EB99EB700B3A3C6 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				B523F7B91EA4E709009E162C /* TabBarController.swift */,
 				B523F7BB1EA4EFCB009E162C /* ShoppingBagTableViewController.swift */,
 				B582AE211EB99EB700B3A3C6 /* CheckoutTableViewController.swift */,
+				B57402711EBB35280021DAE6 /* ImagesPageViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				B574026E1EBA920C0021DAE6 /* BaseStackViewTVCell.swift in Sources */,
 				B523F7C21EA50CD7009E162C /* CartDetailCell.swift in Sources */,
 				B58955A01EA4344B0099BCE5 /* AppDelegate.swift in Sources */,
+				B57402721EBB35290021DAE6 /* ImagesPageViewController.swift in Sources */,
 				B53152EB1EA49AD000D1A652 /* FeedDetailTableViewController.swift in Sources */,
 				B58955B61EA437A20099BCE5 /* FeedCell.swift in Sources */,
 				B57402701EBADBE80021DAE6 /* NikeFont.swift in Sources */,
