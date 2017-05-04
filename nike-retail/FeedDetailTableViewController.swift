@@ -13,6 +13,15 @@ class FeedDetailTableViewController: UITableViewController, UINavigationControll
     var selectedFeed: Feed!
     var feeds: [Feed]?
     
+    lazy var imgsPageVC: ImagesPageViewController = {
+        let vc = ImagesPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        return vc
+    }()
+//    let imagesHeaderView: ImagesHeaderView = {
+//        let v = ImagesHeaderView()
+//        return v
+//    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -20,6 +29,7 @@ class FeedDetailTableViewController: UITableViewController, UINavigationControll
         navigationItem.title = selectedFeed.name
         navigationController?.navigationBar.topItem?.title = "" // UI: removes back button's text
         
+        addChildViewController(imgsPageVC)
         setupTableView()
     }
     
@@ -38,10 +48,25 @@ class FeedDetailTableViewController: UITableViewController, UINavigationControll
         tableView.register(ProductDetailCell.self, forCellReuseIdentifier: TableCell.productDetailCell)
         tableView.register(SuggestionsCell.self, forCellReuseIdentifier: TableCell.suggestionsCell)
     }
+    
+    
 }
 
 extension FeedDetailTableViewController
 {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let vc = imgsPageVC
+//        vc.pageVCDelegate = 
+        vc.images = selectedFeed.images
+        return vc.view
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UIScreenWidth
+    }
+    
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 0 - item detail cell
         // 1 - buy button
