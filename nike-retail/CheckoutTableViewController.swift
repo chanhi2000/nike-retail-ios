@@ -81,7 +81,8 @@ class CheckoutTableViewController: UITableViewController {
         case 0:  // cell 0: Billing Title Cell
             return 21.5 + 2*24
         case 1:  // cell 1: Billing Info Cell
-            return 4*(44+19.5+8) + 5*24
+            // return 4*(44 + 19 + 8) + (5*24)
+            return 404
         case 2:  // cell 2: Cart Detail Cell
             return 2*(24 + 2) + 3*(23)
         case 3:  // cell 3 : Cart Total Cell

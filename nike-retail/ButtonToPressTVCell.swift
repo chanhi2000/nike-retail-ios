@@ -21,6 +21,7 @@ class ButtonToPressTVCell: ButtonTVCell {
         backgroundColor = .clear
     }
     
+    @objc
     func buttonPressed() {
         let vc = CheckoutTableViewController()
         vc.subtotal = tempNumber

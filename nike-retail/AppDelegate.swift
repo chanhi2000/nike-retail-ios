@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().tintColor = .black
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navigationTitleFont!]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: navigationTitleFont!]
         
         UITabBar.appearance().tintColor = .black
         return true

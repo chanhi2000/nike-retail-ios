@@ -49,7 +49,6 @@ class CartDetailCell: BaseStackViewTVCell {
     }()
     
     override func setupViews() {
-        
         let subtotalStackView = generateStackView(with: CartDetail.Subtotal.rawValue, priceLabel: subtotalPriceLabel)
         let extraFeeStackView = generateStackView(with: CartDetail.ExtraFee.rawValue, priceLabel: extraFeePriceLabel)
         let taxStackView = generateStackView(with: CartDetail.Tax.rawValue, priceLabel: taxPriceLabel)

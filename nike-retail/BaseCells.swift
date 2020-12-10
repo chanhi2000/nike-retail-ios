@@ -11,7 +11,6 @@ import UIKit
 class BaseCVCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setupViews()
     }
     
@@ -20,12 +19,14 @@ class BaseCVCell: UICollectionViewCell {
     }
 }
 
-extension BaseCVCell {  func setupViews() {}  }
+extension BaseCVCell {
+    @objc
+    func setupViews() {}
+}
 
 class BaseTVCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
         setupViews()
     }
     
@@ -35,4 +36,7 @@ class BaseTVCell: UITableViewCell {
     
 }
 
-extension BaseTVCell {  func setupViews() {}  }
+extension BaseTVCell {
+    @objc
+    func setupViews() {}
+}
